@@ -1,4 +1,4 @@
-package hellocucumber;
+package bdd_exercise;
 
 import io.cucumber.java.en.*;
 

@@ -1,2 +1,2 @@
-/workspaces/bdd-exercise/java/src/test/java/hellocucumber/StepDefinitions.java
-/workspaces/bdd-exercise/java/src/test/java/hellocucumber/RunCucumberTest.java
+/workspaces/bdd-exercise/java/src/test/java/bdd_exercise/RunCucumberTest.java
+/workspaces/bdd-exercise/java/src/test/java/bdd_exercise/StepDefinitions.java
