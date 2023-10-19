@@ -6,14 +6,32 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.FileInputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Properties;
 
  
 class JUnit5ExampleTest {
  
     @Test
     void justAnExample() throws IOException {
+
+        String client_id = "";
+        String client_secret = "";
+
+        try (InputStream input = new FileInputStream("src/test/resources/test.properties")) {
+
+            Properties prop = new Properties();
+
+            prop.load(input);
+
+            client_id = prop.getProperty("client_id");
+            client_secret = prop.getProperty("client_secret");
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
         
         URL url = new URL("https://ob.sandbox.natwest.com/token");
 
@@ -22,7 +40,8 @@ class JUnit5ExampleTest {
         connection.setRequestProperty("accept", "application/json");
         connection.setDoOutput(true);
 
-        String queryString = "grant_type=client_credentials&client_id=Ruo55QIgQ3Ij7a3QFKGuJmt5i2V4j-sXCCg_FXZh7XI=&client_secret=spvZeXH7PA2GOJPx3fLL1XisLwTF2LcWD2Hwyz8ZSK0=";
+
+        String queryString = String.format("grant_type=client_credentials&client_id=%s&client_secret=%s", client_id, client_secret);
 
         try(OutputStream os = connection.getOutputStream()) {
             byte[] input = queryString.getBytes("utf-8");
