@@ -1,2 +1,2 @@
-java/target/*
-java/src/test/resources/com/natwest/ai/exercise/properties/test.properties
+target
+src/test/resources/com/natwest/ai/exercise/properties/test.properties
