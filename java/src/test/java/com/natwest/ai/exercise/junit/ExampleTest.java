@@ -20,7 +20,7 @@ class JUnit5ExampleTest {
         String client_id = "";
         String client_secret = "";
 
-        try (InputStream input = new FileInputStream("src/test/resources/test.properties")) {
+        try (InputStream input = new FileInputStream("src/test/java/com/natwest/ai/exercise/resources/properties/test.properties")) {
 
             Properties prop = new Properties();
 
