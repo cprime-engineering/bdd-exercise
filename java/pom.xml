@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>bdd-exercise</groupId>
-    <artifactId>bdd-exercise</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <groupId>com.natwest.ai.exercise</groupId>
+    <artifactId>ai-bdd-exercise</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -82,6 +82,15 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.1.2</version>
             </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.1.0</version>
+                <configuration>
+                    <mainClass>com.natwest.ai.exercise.Exec</mainClass>
+                </configuration>
+            </plugin>
+
         </plugins>
     </build>
 </project>
