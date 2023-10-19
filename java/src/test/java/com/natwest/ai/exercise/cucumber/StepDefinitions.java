@@ -1,4 +1,4 @@
-package bdd_exercise;
+package com.natwest.ai.exercise.cucumber;
 
 import io.cucumber.java.en.*;
 
