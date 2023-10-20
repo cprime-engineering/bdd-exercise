@@ -1,2 +1,2 @@
 target
-src/test/resources/com/natwest/ai/exercise/properties/test.properties
+src/main/resources/properties/com/natwest/ai/exercise/application.properties
