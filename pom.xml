@@ -87,7 +87,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.1.0</version>
                 <configuration>
-                    <mainClass>com.natwest.ai.exercise.Exec</mainClass>
+                    <mainClass>com.natwest.ai.exercise.Executable</mainClass>
                 </configuration>
             </plugin>
 
