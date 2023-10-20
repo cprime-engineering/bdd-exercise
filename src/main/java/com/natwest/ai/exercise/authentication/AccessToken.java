@@ -1,4 +1,4 @@
-package com.natwest.bdd_exercise.test;
+package com.natwest.ai.exercise.authentication;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

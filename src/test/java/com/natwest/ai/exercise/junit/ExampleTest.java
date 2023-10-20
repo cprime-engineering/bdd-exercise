@@ -1,6 +1,7 @@
-package com.natwest.bdd_exercise.test;
+package com.natwest.ai.exercise.junit;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.natwest.ai.exercise.authentication.AccessToken;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
